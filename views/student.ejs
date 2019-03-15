@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title> Students Data Entry </title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   <form action="/student" method="POST">
+<h1> Welcome To Students Data Entry Page</h1>
+<hr>
+<a href="/"><img class="logo" src="http://localhost:3000/images/candy.jpg" width="200"></a>
+<hr>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Students Name</label>
+    <input name="stdname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your Information with anyone else.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Students ID</label>
+    <input name="stdid" type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter ID" required>
+    <small id="emailHelp" class="form-text text-muted">Enter Your Valid ID Number.</small>
+  </div>
+
+<div class="form-group">
+    <label for="exampleInputEmail1">Students Department Name</label>
+    <input name="stddpt" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Department Name" required>
+    <small id="emailHelp" class="form-text text-muted">Enter Short form of Your Department.EX:CSE,EEE...</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Students Age</label>
+    <input name="stdage" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter AGE" required>
+    <small id="emailHelp" class="form-text text-muted">Enter The Correct AGE.</small>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Students Contract Number</label>
+    <input name="stdcn" type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter Contract Number" required>
+    <small id="emailHelp" class="form-text text-muted">EX:016xxxxxx.</small>
+  </div>
+
+<button type="submit" class="btn btn-primary">Add & Show</button>
+
+
+<hr>
+
+</form>
+  </body>
+</html>
